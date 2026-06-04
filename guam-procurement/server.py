@@ -206,4 +206,4 @@ async def search_procurement_documents(
 
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(show_banner=False, log_level="ERROR")
