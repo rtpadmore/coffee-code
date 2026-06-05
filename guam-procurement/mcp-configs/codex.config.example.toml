@@ -1,0 +1,11 @@
+# Add this to ~/.codex/config.toml, or to .codex/config.toml in a trusted project.
+# Requires: python -m pip install .
+
+[mcp_servers.guam-procurement]
+command = "python"
+args = ["-m", "guam_procurement_mcp"]
+startup_timeout_sec = 20
+tool_timeout_sec = 60
+
+[mcp_servers.guam-procurement.tools.search_procurement_documents]
+approval_mode = "approve"

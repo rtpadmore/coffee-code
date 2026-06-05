@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guam-procurement-mcp"
+version = "0.1.0"
+description = "MCP server for searching Guam GSA procurement document links."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [
+  { name = "CCF AI Officers Summit 2026 Coffee & Code" }
+]
+keywords = ["mcp", "procurement", "guam", "government", "gsa"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Internet",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+  "fastmcp>=2.0",
+  "httpx>=0.24",
+]
+
+[project.urls]
+Homepage = "https://github.com/CCF-AI-Officers-Summit-2026/coffee-code"
+Source = "https://github.com/CCF-AI-Officers-Summit-2026/coffee-code/tree/main/guam-procurement"
+
+[project.scripts]
+guam-procurement-mcp = "guam_procurement_mcp.server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["guam_procurement_mcp*"]

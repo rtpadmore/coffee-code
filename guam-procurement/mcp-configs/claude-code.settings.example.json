@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "guam-procurement": {
+      "command": "python",
+      "args": ["-m", "guam_procurement_mcp"]
+    }
+  }
+}

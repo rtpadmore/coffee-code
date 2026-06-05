@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "guam-procurement": {
+      "command": "python",
+      "args": ["server.py"],
+      "cwd": "/workspaces/coffee-code/guam-procurement"
+    }
+  }
+}

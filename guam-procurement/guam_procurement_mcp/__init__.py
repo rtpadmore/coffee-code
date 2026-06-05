@@ -1,29 +1,23 @@
+"""Guam GSA Procurement MCP server package."""
+
 from guam_procurement_mcp.server import (
     GSA_IFB_URL,
     GSA_SOURCE_NAME,
     document_kind,
     document_year,
-    fetch_gsa_ifb_html,
-    main,
     parse_procurement_records,
-    procurement_record,
     search_procurement_documents,
     solicitation_number,
 )
+
+__version__ = "0.1.0"
 
 __all__ = [
     "GSA_IFB_URL",
     "GSA_SOURCE_NAME",
     "document_kind",
     "document_year",
-    "fetch_gsa_ifb_html",
-    "main",
     "parse_procurement_records",
-    "procurement_record",
     "search_procurement_documents",
     "solicitation_number",
 ]
-
-
-if __name__ == "__main__":
-    main()
